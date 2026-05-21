@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dhgti1dp7bth3"]
+
+[ext_resource type="Script" uid="uid://bvwlk6kb00dln" path="res://scripts/diver.gd" id="1_tjub5"]
+[ext_resource type="Texture2D" uid="uid://ciaaqiybuhmrm" path="res://icon.svg" id="2_gevxa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bswci"]
+size = Vector2(64, 64)
+
+[node name="Diver" type="CharacterBody2D" unique_id=543195763]
+script = ExtResource("1_tjub5")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1316810122]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gevxa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1820275315]
+shape = SubResource("RectangleShape2D_bswci")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=944599059]
+position_smoothing_enabled = true
