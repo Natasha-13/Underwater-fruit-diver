@@ -1,51 +1,8 @@
 [gd_scene format=3 uid="uid://chsekfolhp8nk"]
 
-[ext_resource type="Texture2D" uid="uid://ciaaqiybuhmrm" path="res://icon.svg" id="1_014kd"]
 [ext_resource type="PackedScene" uid="uid://dhgti1dp7bth3" path="res://prefabs/diver.tscn" id="1_bswci"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rus8k"]
-size = Vector2(512, 24)
 
 [node name="level 1" type="Node2D" unique_id=1243688593]
 
 [node name="Diver" parent="." unique_id=543195763 instance=ExtResource("1_bswci")]
 position = Vector2(496, 216)
-
-[node name="Platform" type="StaticBody2D" parent="." unique_id=699825728]
-position = Vector2(480, 368)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform" unique_id=329075007]
-position = Vector2(0, 52)
-scale = Vector2(4, 0.1875)
-texture = ExtResource("1_014kd")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=1722182753]
-position = Vector2(0, 52)
-shape = SubResource("RectangleShape2D_rus8k")
-
-[node name="Platform2" type="StaticBody2D" parent="." unique_id=389610405]
-position = Vector2(1096, 360)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform2" unique_id=1510298481]
-position = Vector2(0, 52)
-scale = Vector2(4, 0.1875)
-texture = ExtResource("1_014kd")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=2119927289]
-position = Vector2(0, 52)
-shape = SubResource("RectangleShape2D_rus8k")
-
-[node name="Platform3" type="StaticBody2D" parent="." unique_id=394952413]
-position = Vector2(1664, 304)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform3" unique_id=600337254]
-position = Vector2(0, 52)
-scale = Vector2(4, 0.1875)
-texture = ExtResource("1_014kd")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=889400958]
-position = Vector2(0, 52)
-shape = SubResource("RectangleShape2D_rus8k")
