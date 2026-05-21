@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://chsekfolhp8nk"]
+
+[ext_resource type="Texture2D" uid="uid://ciaaqiybuhmrm" path="res://icon.svg" id="1_014kd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bswci"]
+size = Vector2(64, 64)
+
+[node name="level 1" type="Node2D" unique_id=1243688593]
+
+[node name="Diver" type="CharacterBody2D" parent="." unique_id=64437067]
+position = Vector2(544, 96)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Diver" unique_id=1080282902]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_014kd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Diver" unique_id=1159129744]
+shape = SubResource("RectangleShape2D_bswci")
