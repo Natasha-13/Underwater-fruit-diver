@@ -2,7 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://dhgti1dp7bth3" path="res://prefabs/diver.tscn" id="1_bswci"]
 
+[sub_resource type="TileSet" id="TileSet_014kd"]
+
 [node name="level 1" type="Node2D" unique_id=1243688593]
 
 [node name="Diver" parent="." unique_id=543195763 instance=ExtResource("1_bswci")]
 position = Vector2(496, 216)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1640675922]
+tile_set = SubResource("TileSet_014kd")
