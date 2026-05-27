@@ -26,7 +26,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	# handle respawn
-	if position.y > 900:
+	if position.y > 1700:
 		#respawn
 		respawn()
 		
