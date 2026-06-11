@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Underwater fruit diver"
-run/main_scene="uid://chsekfolhp8nk"
+run/main_scene="uid://d3oy8i2glx236"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

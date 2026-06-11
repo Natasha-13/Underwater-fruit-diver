@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpim842qt85t1"]
 
-[ext_resource type="Script" uid="uid://ccan4l44p8tg5" path="res://scripts/main_menu.gd" id="1_liyum"]
+[ext_resource type="Script" uid="uid://btg1suv52m5kw" path="res://scripts/options_menu.gd" id="1_liyum"]
 
 [node name="Options menu" type="Control" unique_id=673438960]
 layout_mode = 3
@@ -13,16 +13,21 @@ script = ExtResource("1_liyum")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=437133896]
 layout_mode = 0
-offset_right = 320.0
-offset_bottom = 31.0
+offset_left = 208.0
+offset_top = 288.0
+offset_right = 936.0
+offset_bottom = 354.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1005362426]
 layout_mode = 2
 
-[node name="Main menu" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1452813965]
-layout_mode = 2
-text = "MAIN MENU"
-
 [node name="Volume" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1684308844]
 layout_mode = 2
 text = "VOLUME"
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1452813965]
+layout_mode = 2
+text = "BACK"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
