@@ -2990,3 +2990,5 @@ tile_set = SubResource("TileSet_014kd")
 
 [node name="Door" parent="." unique_id=1610237101 instance=ExtResource("3_rus8k")]
 position = Vector2(892, 1169)
+
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
