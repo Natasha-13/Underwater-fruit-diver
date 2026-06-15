@@ -34,3 +34,5 @@ func respawn():
 	position = start_position
 	
 	
+	
+	
