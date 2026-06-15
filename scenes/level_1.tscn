@@ -3032,10 +3032,11 @@ position = Vector2(1439, 1338)
 position = Vector2(2570, 954)
 
 [node name="Score" type="Label" parent="." unique_id=1921373286]
-offset_right = 40.0
+offset_right = 61.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Score = "
 script = ExtResource("6_pa8r4")
 
 [connection signal="body_entered" from="Door_1" to="Door_1" method="_on_body_entered"]
+[connection signal="body_entered" from="Fruit" to="Score" method="_on_fruit_body_entered"]
