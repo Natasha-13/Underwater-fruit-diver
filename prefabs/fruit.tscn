@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dv377umstf0t1"]
+
+[ext_resource type="Texture2D" uid="uid://ciaaqiybuhmrm" path="res://icon.svg" id="1_7ybvl"]
+[ext_resource type="Script" uid="uid://byg337kwheibt" path="res://scripts/fruit.gd" id="1_a1cin"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_15mv3"]
+size = Vector2(24, 24)
+
+[node name="Fruit" type="Area2D" unique_id=517135482]
+script = ExtResource("1_a1cin")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1551765058]
+scale = Vector2(0.1875, 0.1875)
+texture = ExtResource("1_7ybvl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=199091425]
+shape = SubResource("RectangleShape2D_15mv3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
