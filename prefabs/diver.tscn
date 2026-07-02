@@ -1,21 +1,23 @@
 [gd_scene format=3 uid="uid://dhgti1dp7bth3"]
 
 [ext_resource type="Script" uid="uid://bvwlk6kb00dln" path="res://scripts/diver.gd" id="1_tjub5"]
-[ext_resource type="Texture2D" uid="uid://ciaaqiybuhmrm" path="res://icon.svg" id="2_gevxa"]
+[ext_resource type="Texture2D" uid="uid://c60unhe8jqlqy" path="res://Assests/Diver.png" id="2_tjub5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bswci"]
-size = Vector2(48, 48)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gevxa"]
+size = Vector2(26, 51)
 
 [node name="Diver" type="CharacterBody2D" unique_id=543195763]
 script = ExtResource("1_tjub5")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1316810122]
-scale = Vector2(0.375, 0.375)
-texture = ExtResource("2_gevxa")
+position = Vector2(0, 3)
+scale = Vector2(0.875, 0.9375)
+texture = ExtResource("2_tjub5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1820275315]
-shape = SubResource("RectangleShape2D_bswci")
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_gevxa")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944599059]
 position_smoothing_enabled = true

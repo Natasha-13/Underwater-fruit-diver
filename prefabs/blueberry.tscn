@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dr7h1iognet6m"]
+
+[ext_resource type="Texture2D" uid="uid://by4ig8iw1l7bu" path="res://Assests/Blueberry.png" id="1_fllgb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dgjqw"]
+
+[node name="Blueberry" type="Area2D" unique_id=705569388]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=629939816]
+texture = ExtResource("1_fllgb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=478415966]
+position = Vector2(-1, 0)
+rotation = -0.58119464
+shape = SubResource("CapsuleShape2D_dgjqw")
