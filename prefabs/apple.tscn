@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dv377umstf0t1"]
 
-[ext_resource type="Script" uid="uid://byg337kwheibt" path="res://scripts/fruit.gd" id="1_5v1qd"]
+[ext_resource type="Script" uid="uid://byg337kwheibt" path="res://scripts/apple.gd" id="1_5v1qd"]
 [ext_resource type="Texture2D" uid="uid://d0q4aarutur4k" path="res://Assests/Apple.png" id="2_w03ox"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jp5cg"]

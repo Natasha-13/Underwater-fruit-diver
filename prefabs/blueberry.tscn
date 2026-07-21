@@ -5,6 +5,7 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dgjqw"]
 
 [node name="Blueberry" type="Area2D" unique_id=705569388]
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=629939816]
 texture = ExtResource("1_fllgb")

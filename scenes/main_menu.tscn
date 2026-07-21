@@ -405,6 +405,7 @@ value = 50.0
 script = ExtResource("4_wu84c")
 
 [node name="Instructions" type="Panel" parent="." unique_id=600612556]
+visible = false
 layout_mode = 0
 offset_left = 176.0
 offset_top = 176.0
@@ -463,6 +464,57 @@ and once you have completed both the levels then you want to have the lowest tim
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Credits" type="Panel" parent="." unique_id=992105531]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 176.0
+offset_right = 976.0
+offset_bottom = 544.0
+
+[node name="Label" type="Label" parent="Credits" unique_id=738722826]
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+text = "Credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit credits" type="Button" parent="Credits" unique_id=289144116]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 304.0
+offset_right = 720.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7b55j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pajh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j7ex8")
+text = " BACK"
+
+[node name="Label2" type="Label" parent="Credits" unique_id=561907095]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 784.0
+offset_bottom = 304.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 21
+text = "These are people of things that helped me make this game"
+horizontal_alignment = 1
+
 [connection signal="pressed" from="MarginContainer/Main Buttons/Play Button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MarginContainer/Main Buttons/Instructions" to="." method="_on_instructions_pressed"]
 [connection signal="pressed" from="MarginContainer/Main Buttons/Options" to="." method="_on_options_pressed"]
@@ -471,3 +523,4 @@ vertical_alignment = 1
 [connection signal="pressed" from="Options/Exit Options" to="." method="_on_exit_options_pressed"]
 [connection signal="value_changed" from="Options/Audio Control" to="Options/Audio Control" method="_on_value_changed"]
 [connection signal="pressed" from="Instructions/Exit instructions" to="." method="_on_exit_instructions_pressed"]
+[connection signal="pressed" from="Credits/Exit credits" to="." method="_on_exit_credits_pressed"]
