@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dhgti1dp7bth3" path="res://prefabs/diver.tscn" id="1_bswci"]
 [ext_resource type="Texture2D" uid="uid://bfea1btbragsx" path="res://basic tilemap/Tilemap/tilemap.png" id="2_bswci"]
 [ext_resource type="PackedScene" uid="uid://dec3rjf60llvl" path="res://prefabs/door_1.tscn" id="3_rus8k"]
-[ext_resource type="PackedScene" path="res://prefabs/Apple.tscn" id="5_fcfvj"]
+[ext_resource type="PackedScene" uid="uid://dv377umstf0t1" path="res://prefabs/apple.tscn" id="5_fcfvj"]
 [ext_resource type="Script" uid="uid://ggmk1jcane50" path="res://scripts/Score.gd" id="6_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://va05ncjj8ibq" path="res://prefabs/banana.tscn" id="7_1s4pk"]
 [ext_resource type="PackedScene" uid="uid://dr7h1iognet6m" path="res://prefabs/blueberry.tscn" id="8_x2xxo"]
@@ -3034,20 +3034,28 @@ position = Vector2(1196, 846)
 position = Vector2(258, 1026)
 
 [node name="Grapes" parent="." unique_id=597732201 instance=ExtResource("10_isj1j")]
+position = Vector2(46, -19)
 
 [node name="Kiwi fruit" parent="." unique_id=858092761 instance=ExtResource("11_so66j")]
+position = Vector2(47, -45)
 
 [node name="Lemon" parent="." unique_id=720153073 instance=ExtResource("12_tr1x6")]
+position = Vector2(97, 12)
 
 [node name="Orange" parent="." unique_id=1523760524 instance=ExtResource("13_d5akn")]
+position = Vector2(97, -11)
 
 [node name="Peach" parent="." unique_id=937533047 instance=ExtResource("14_wbtxt")]
+position = Vector2(98, -40)
 
 [node name="Pear" parent="." unique_id=1424011257 instance=ExtResource("15_x2fux")]
+position = Vector2(71, -40)
 
 [node name="Strawberry" parent="." unique_id=303665229 instance=ExtResource("16_s7g0b")]
+position = Vector2(71, 6)
 
 [node name="Watermelon" parent="." unique_id=747599357 instance=ExtResource("17_mmfjm")]
+position = Vector2(72, -17)
 
 [connection signal="body_entered" from="Door_1" to="Door_1" method="_on_body_entered"]
 [connection signal="body_entered" from="Apple" to="CanvasLayer/Score" method="_on_fruit_body_entered"]

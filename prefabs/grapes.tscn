@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://dvyeud1d3dyc"]
 
+[ext_resource type="Texture2D" uid="uid://dsjtgu17c8c5v" path="res://Assests/grapes.png" id="1_4sbfk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_873lc"]
+radius = 11.0
+
 [node name="Grapes" type="Area2D" unique_id=597732201]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1177900881]
+position = Vector2(4, 0)
+texture = ExtResource("1_4sbfk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=741783681]
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_873lc")

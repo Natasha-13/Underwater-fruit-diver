@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://dm3y8jqm4q425"]
 
+[ext_resource type="Texture2D" uid="uid://cjyjhfjh1arr" path="res://Assests/lemon.png" id="1_vhgug"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qq5kc"]
+height = 32.0
+
 [node name="Lemon" type="Area2D" unique_id=720153073]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1742111451]
+position = Vector2(2, -2)
+texture = ExtResource("1_vhgug")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1801267889]
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_qq5kc")

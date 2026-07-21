@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://bkr2u6ugqnlpb"]
 
+[ext_resource type="Texture2D" uid="uid://b7ogkmqfywvw0" path="res://Assests/watermelon.png" id="1_xv3h0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0kn22"]
+height = 22.0
+
 [node name="Watermelon" type="Area2D" unique_id=747599357]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=175009360]
+position = Vector2(0, -2)
+texture = ExtResource("1_xv3h0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037027403]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_0kn22")
