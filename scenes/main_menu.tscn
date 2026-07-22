@@ -80,8 +80,8 @@ corner_radius_bottom_left = 16
 shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
 shadow_size = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk1qb"]
-bg_color = Color(0.16740179, 0.34637794, 0.8475283, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_svtp6"]
+bg_color = Color(0.17466834, 0.3481417, 0.85325474, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -116,8 +116,17 @@ corner_radius_bottom_left = 16
 shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
 shadow_size = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk1qb"]
+bg_color = Color(0.2099601, 0.39398363, 0.893446, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.09019608, 0.10980392, 0.28235295, 1)
+shadow_size = 7
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flqon"]
-bg_color = Color(0.27207032, 0.4601509, 0.93521947, 1)
+bg_color = Color(0.2925973, 0.479607, 0.94290805, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -153,7 +162,7 @@ shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
 shadow_size = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
-bg_color = Color(0.38179222, 0.5557153, 0.9671102, 1)
+bg_color = Color(0.4387866, 0.6032701, 0.9757293, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -267,6 +276,24 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_8egab")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_gw5y6")
 text = "HOW TO PLAY"
 
+[node name="Level select" type="Button" parent="MarginContainer/Main Buttons" unique_id=860010728]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_svtp6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5dd4i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgwnu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ekxnf")
+text = "SELECT LEVEL"
+
 [node name="Options" type="Button" parent="MarginContainer/Main Buttons" unique_id=168781156]
 layout_mode = 2
 size_flags_vertical = 3
@@ -350,10 +377,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -400.0
+offset_left = -416.0
 offset_top = -148.0
-offset_right = 400.0
-offset_bottom = 220.0
+offset_right = 416.0
+offset_bottom = 276.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -373,9 +400,9 @@ vertical_alignment = 1
 [node name="Exit Options" type="Button" parent="Options" unique_id=2034170480]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 304.5
+offset_top = 347.5
 offset_right = 720.0
-offset_bottom = 355.5
+offset_bottom = 398.5
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
@@ -407,15 +434,16 @@ script = ExtResource("4_wu84c")
 [node name="Instructions" type="Panel" parent="." unique_id=600612556]
 visible = false
 layout_mode = 0
-offset_left = 176.0
-offset_top = 176.0
-offset_right = 976.0
-offset_bottom = 544.0
+offset_left = 160.0
+offset_top = 168.0
+offset_right = 992.0
+offset_bottom = 600.0
 
 [node name="Label" type="Label" parent="Instructions" unique_id=1002313037]
 layout_mode = 0
+offset_top = -6.0
 offset_right = 800.0
-offset_bottom = 55.0
+offset_bottom = 49.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 40
@@ -426,9 +454,9 @@ vertical_alignment = 1
 [node name="Exit instructions" type="Button" parent="Instructions" unique_id=1947372521]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 304.0
+offset_top = 350.0
 offset_right = 720.0
-offset_bottom = 360.0
+offset_bottom = 406.0
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
@@ -446,30 +474,32 @@ text = "Back"
 
 [node name="Label2" type="Label" parent="Instructions" unique_id=414004089]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 56.0
-offset_right = 784.0
-offset_bottom = 285.0
+offset_top = 34.0
+offset_right = 832.0
+offset_bottom = 350.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 21
+theme_override_font_sizes/font_size = 20
 text = "How to play:
 Use left and right arrows to move side to side. Use space bar to jump
 Objective:
-Collect all the fruit to get your score as high as possible and once you have collected all the fruit
-head to to door to move on to the next level
+Collect all the fruit to get your score as high as possible and once you have collected all the fruit head to
+the door to move on to the next level
 How to win:
-Collect all the  fruit and make it through the door to the next level in the quickest amount of time
-and once you have completed both the levels then you want to have the lowest time."
+Collect all the  fruit and make it through the door to the next level in the quickest amount of time and
+once you have completed both the levels then you want to have the lowest time.
+What to do:
+At the start of the level you will be on the ground at the top of the game. From here you run along the
+platform until you find a "
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Credits" type="Panel" parent="." unique_id=992105531]
 layout_mode = 0
-offset_left = 176.0
-offset_top = 176.0
-offset_right = 976.0
-offset_bottom = 544.0
+offset_left = 160.0
+offset_top = 168.0
+offset_right = 992.0
+offset_bottom = 600.0
 
 [node name="Label" type="Label" parent="Credits" unique_id=738722826]
 layout_mode = 0
@@ -485,9 +515,9 @@ vertical_alignment = 1
 [node name="Exit credits" type="Button" parent="Credits" unique_id=289144116]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 304.0
+offset_top = 352.0
 offset_right = 720.0
-offset_bottom = 360.0
+offset_bottom = 408.0
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
@@ -505,13 +535,12 @@ text = " BACK"
 
 [node name="Label2" type="Label" parent="Credits" unique_id=561907095]
 layout_mode = 0
-offset_left = 16.0
 offset_top = 56.0
-offset_right = 784.0
-offset_bottom = 304.0
+offset_right = 832.0
+offset_bottom = 336.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 21
+theme_override_font_sizes/font_size = 20
 text = "These are people of things that helped me make this game"
 horizontal_alignment = 1
 

@@ -3,6 +3,9 @@
 [ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="1_abcn5"]
 [ext_resource type="Script" uid="uid://cnxmlqvtkgky0" path="res://scripts/you_won!.gd" id="1_im1av"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6l602"]
+bg_color = Color(0.6666667, 0.3647059, 0.79607844, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_im1av"]
 bg_color = Color(0.09019608, 0.22745098, 0.6392157, 1)
 corner_radius_top_left = 16
@@ -47,6 +50,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_im1av")
+
+[node name="Background" type="Panel" parent="." unique_id=596564535]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 640.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6l602")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1264064928]
 layout_mode = 1
