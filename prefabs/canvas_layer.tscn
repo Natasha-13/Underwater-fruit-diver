@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://cc8lrcfp6k5f6"]
+
+[ext_resource type="Script" uid="uid://ggmk1jcane50" path="res://scripts/Score.gd" id="1_vxx0o"]
+[ext_resource type="Script" uid="uid://dmmg0lerqy6fa" path="res://scripts/canvas_layer.gd" id="1_xtb4j"]
+[ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="2_xtb4j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iw4em"]
+bg_color = Color(0.38179222, 0.5557153, 0.9671102, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.09019608, 0.10980392, 0.28235295, 1)
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hnsmf"]
+bg_color = Color(0.12851623, 0.2990436, 0.7921328, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nossa"]
+bg_color = Color(0.23955971, 0.4342779, 0.92168343, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjqri"]
+bg_color = Color(0.38179222, 0.5557153, 0.9671102, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
+shadow_size = 5
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1739900130]
+script = ExtResource("1_xtb4j")
+
+[node name="Score" type="Label" parent="." unique_id=1383443442]
+offset_right = 61.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Score = "
+script = ExtResource("1_vxx0o")
+
+[node name="pause menu" type="Panel" parent="." unique_id=1106745900]
+offset_right = 1154.0
+offset_bottom = 648.0
+
+[node name="resume" type="Button" parent="pause menu" unique_id=1325833398]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 417.0
+offset_right = 1088.0
+offset_bottom = 506.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_xtb4j")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_iw4em")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hnsmf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nossa")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hjqri")
+text = "Resume game"
+
+[node name="quit" type="Button" parent="pause menu" unique_id=1966938682]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 1088.0
+offset_bottom = 281.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_xtb4j")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_iw4em")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hnsmf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nossa")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hjqri")
+text = "Quit game"
+
+[node name="home" type="Button" parent="pause menu" unique_id=942986029]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 304.0
+offset_right = 1088.0
+offset_bottom = 401.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_xtb4j")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_iw4em")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hnsmf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nossa")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hjqri")
+text = "Main menu"
+
+[node name="Label" type="Label" parent="pause menu" unique_id=1048059357]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_xtb4j")
+theme_override_font_sizes/font_size = 60
+text = "You have paused the game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pause" type="Button" parent="." unique_id=1622799829]
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_xtb4j")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_iw4em")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hnsmf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nossa")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hjqri")
+text = "Pause game"
+
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]

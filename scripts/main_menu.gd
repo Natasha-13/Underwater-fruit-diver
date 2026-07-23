@@ -4,6 +4,7 @@ extends Control
 @onready var options: Panel = $Options
 @onready var instructions: Panel = $Instructions
 @onready var credits: Panel = $Credits
+@onready var levels: Panel = $Levels
 
 
 func _ready():
@@ -11,6 +12,7 @@ func _ready():
 	options.visible = false
 	instructions.visible = false
 	credits.visible = false
+	levels.visible = false
 	
 func _on_play_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
@@ -46,3 +48,23 @@ func _on_exit_instructions_pressed() -> void:
 
 func _on_exit_credits_pressed() -> void:
 	_ready()
+
+
+func _on_level_select_pressed() -> void:
+	print("level select pressed")
+	main_buttons.visible = false
+	levels.visible = true
+
+
+
+func _on_exit_level_select_pressed() -> void:
+	_ready()
+
+
+func _on_level_one_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
+
+
+
+func _on_level_two_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/level_2.tscn")
