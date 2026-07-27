@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://c1rlr6jgmbw4p"]
 
 [ext_resource type="Texture2D" uid="uid://ca8gjhxydba0b" path="res://Assests/Kiwi fruit.png" id="1_hyxgm"]
+[ext_resource type="Script" uid="uid://cyuwmyi8j0anb" path="res://scripts/kiwi_fruit.gd" id="1_yfc5y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yfc5y"]
 height = 23.781363
 
 [node name="Kiwi fruit" type="Area2D" unique_id=858092761]
+script = ExtResource("1_yfc5y")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=424859566]
 position = Vector2(4, 1)
@@ -15,3 +18,5 @@ texture = ExtResource("1_hyxgm")
 position = Vector2(1, 0)
 rotation = -0.8851285
 shape = SubResource("CapsuleShape2D_yfc5y")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

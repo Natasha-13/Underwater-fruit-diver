@@ -149,4 +149,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_nossa")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hjqri")
 text = "Pause game"
 
+[connection signal="pressed" from="pause menu/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="pause menu/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="pause menu/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]

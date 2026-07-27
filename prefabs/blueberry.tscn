@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://dr7h1iognet6m"]
 
+[ext_resource type="Script" uid="uid://gu1v3lhs5m2a" path="res://scripts/blueberry.gd" id="1_dgjqw"]
 [ext_resource type="Texture2D" uid="uid://by4ig8iw1l7bu" path="res://Assests/Blueberry.png" id="1_fllgb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dgjqw"]
 
 [node name="Blueberry" type="Area2D" unique_id=705569388]
+script = ExtResource("1_dgjqw")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=629939816]
@@ -14,3 +16,5 @@ texture = ExtResource("1_fllgb")
 position = Vector2(-1, 0)
 rotation = -0.58119464
 shape = SubResource("CapsuleShape2D_dgjqw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

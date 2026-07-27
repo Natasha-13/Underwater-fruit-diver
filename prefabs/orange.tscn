@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://e3xeicfypaxc"]
 
 [ext_resource type="Texture2D" uid="uid://eu1vhwjmloi3" path="res://Assests/Orange.png" id="1_2jlfa"]
+[ext_resource type="Script" uid="uid://cn2stbcbd52rc" path="res://scripts/orange.gd" id="1_hbaud"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hbaud"]
 radius = 9.0
 height = 24.0
 
 [node name="Orange" type="Area2D" unique_id=1523760524]
+script = ExtResource("1_hbaud")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=690150547]
 position = Vector2(0, 1)
@@ -15,3 +18,5 @@ texture = ExtResource("1_2jlfa")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1752372616]
 position = Vector2(-1, -3)
 shape = SubResource("CapsuleShape2D_hbaud")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

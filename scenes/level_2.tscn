@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://l1gr20afidfv" path="res://prefabs/pear.tscn" id="14_63d2t"]
 [ext_resource type="PackedScene" uid="uid://cva23he365csd" path="res://prefabs/strawberry.tscn" id="15_va6c3"]
 [ext_resource type="PackedScene" uid="uid://bkr2u6ugqnlpb" path="res://prefabs/watermelon.tscn" id="16_pc3at"]
+[ext_resource type="PackedScene" uid="uid://cc8lrcfp6k5f6" path="res://prefabs/canvas_layer.tscn" id="18_7qsfm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jm1iu"]
 texture = ExtResource("2_jm1iu")
@@ -2817,5 +2818,7 @@ position = Vector2(2088, 1336)
 
 [node name="Watermelon" parent="." unique_id=747599357 instance=ExtResource("16_pc3at")]
 position = Vector2(2448, 1472)
+
+[node name="CanvasLayer" parent="." unique_id=1739900130 instance=ExtResource("18_7qsfm")]
 
 [connection signal="body_entered" from="Door_2" to="Door_2" method="_on_body_entered"]

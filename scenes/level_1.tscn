@@ -8,27 +8,16 @@
 [ext_resource type="PackedScene" uid="uid://dv377umstf0t1" path="res://prefabs/apple.tscn" id="5_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://cc8lrcfp6k5f6" path="res://prefabs/canvas_layer.tscn" id="6_mbb35"]
 [ext_resource type="PackedScene" uid="uid://va05ncjj8ibq" path="res://prefabs/banana.tscn" id="7_1s4pk"]
-[ext_resource type="Script" uid="uid://dq31wvcthbg17" path="res://scripts/banana.gd" id="8_2cbcq"]
 [ext_resource type="PackedScene" uid="uid://dr7h1iognet6m" path="res://prefabs/blueberry.tscn" id="8_x2xxo"]
 [ext_resource type="PackedScene" uid="uid://cqika5ywbgfxu" path="res://prefabs/cherry.tscn" id="9_2cbcq"]
 [ext_resource type="PackedScene" uid="uid://dvyeud1d3dyc" path="res://prefabs/grapes.tscn" id="10_isj1j"]
-[ext_resource type="Script" uid="uid://gu1v3lhs5m2a" path="res://scripts/blueberry.gd" id="10_k8ld0"]
 [ext_resource type="PackedScene" uid="uid://c1rlr6jgmbw4p" path="res://prefabs/kiwi_fruit.tscn" id="11_so66j"]
-[ext_resource type="Script" uid="uid://bde8e8dxvfe" path="res://scripts/cherry.gd" id="12_mbb35"]
 [ext_resource type="PackedScene" uid="uid://dm3y8jqm4q425" path="res://prefabs/lemon.tscn" id="12_tr1x6"]
 [ext_resource type="PackedScene" uid="uid://e3xeicfypaxc" path="res://prefabs/orange.tscn" id="13_d5akn"]
-[ext_resource type="Script" uid="uid://dxxcht5tmmnbb" path="res://scripts/grapes.gd" id="14_iw4em"]
 [ext_resource type="PackedScene" uid="uid://ckp3t63v44jp1" path="res://prefabs/peach.tscn" id="14_wbtxt"]
 [ext_resource type="PackedScene" uid="uid://l1gr20afidfv" path="res://prefabs/pear.tscn" id="15_x2fux"]
-[ext_resource type="Script" uid="uid://cyuwmyi8j0anb" path="res://scripts/kiwi_fruit.gd" id="16_hnsmf"]
 [ext_resource type="PackedScene" uid="uid://cva23he365csd" path="res://prefabs/strawberry.tscn" id="16_s7g0b"]
 [ext_resource type="PackedScene" uid="uid://bkr2u6ugqnlpb" path="res://prefabs/watermelon.tscn" id="17_mmfjm"]
-[ext_resource type="Script" uid="uid://se0206k37i64" path="res://scripts/lemon.gd" id="18_nossa"]
-[ext_resource type="Script" uid="uid://cn2stbcbd52rc" path="res://scripts/orange.gd" id="20_hjqri"]
-[ext_resource type="Script" uid="uid://cry0qdofkgs8j" path="res://scripts/peach.gd" id="22_hg84p"]
-[ext_resource type="Script" uid="uid://wdgknkbf0h20" path="res://scripts/pear.gd" id="24_1aans"]
-[ext_resource type="Script" uid="uid://bhjttbekwyjnl" path="res://scripts/strawberry.gd" id="26_q0ron"]
-[ext_resource type="Script" uid="uid://ydbpllvflq6y" path="res://scripts/watermelon.gd" id="28_tdlki"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xbjy"]
 texture = ExtResource("2_bswci")
@@ -2992,6 +2981,153 @@ tile_size = Vector2i(21, 21)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_rus8k")
 
+[sub_resource type="GDScript" id="GDScript_x2xxo"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_2cbcq"]
+script/source = "extends Area2D
+
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_isj1j"]
+script/source = "extends Area2D
+
+
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_so66j"]
+script/source = "extends Area2D
+
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_tr1x6"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_d5akn"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_wbtxt"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_x2fux"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_s7g0b"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_mmfjm"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
+[sub_resource type="GDScript" id="GDScript_k8ld0"]
+script/source = "extends Area2D
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Diver\":
+		print(\"Yum!\")
+		Global.score += 1
+		visible = false
+		$CollisionShape2D.disabled = true
+"
+
 [node name="level 1" type="Node2D" unique_id=1243688593]
 script = ExtResource("1_iw4em")
 
@@ -3032,55 +3168,55 @@ position = Vector2(366, 1249)
 
 [node name="Banana" parent="." unique_id=828298920 instance=ExtResource("7_1s4pk")]
 position = Vector2(-441, 849)
-script = ExtResource("8_2cbcq")
+script = SubResource("GDScript_x2xxo")
 
 [node name="Blueberry" parent="." unique_id=705569388 instance=ExtResource("8_x2xxo")]
 position = Vector2(1190, 846)
-script = ExtResource("10_k8ld0")
+script = SubResource("GDScript_2cbcq")
 
 [node name="Cherry" parent="." unique_id=1096442268 instance=ExtResource("9_2cbcq")]
 position = Vector2(281, 1033)
-script = ExtResource("12_mbb35")
+script = SubResource("GDScript_isj1j")
 metadata/_edit_group_ = true
 
 [node name="Grapes" parent="." unique_id=597732201 instance=ExtResource("10_isj1j")]
 position = Vector2(772, 951)
-script = ExtResource("14_iw4em")
+script = SubResource("GDScript_so66j")
 metadata/_edit_group_ = true
 
 [node name="Kiwi fruit" parent="." unique_id=858092761 instance=ExtResource("11_so66j")]
 position = Vector2(-200, 941)
-script = ExtResource("16_hnsmf")
+script = SubResource("GDScript_tr1x6")
 metadata/_edit_group_ = true
 
 [node name="Lemon" parent="." unique_id=720153073 instance=ExtResource("12_tr1x6")]
 position = Vector2(1645, 1518)
-script = ExtResource("18_nossa")
+script = SubResource("GDScript_d5akn")
 metadata/_edit_group_ = true
 
 [node name="Orange" parent="." unique_id=1523760524 instance=ExtResource("13_d5akn")]
 position = Vector2(2419, 1220)
-script = ExtResource("20_hjqri")
+script = SubResource("GDScript_wbtxt")
 metadata/_edit_group_ = true
 
 [node name="Peach" parent="." unique_id=937533047 instance=ExtResource("14_wbtxt")]
 position = Vector2(2065, 1230)
-script = ExtResource("22_hg84p")
+script = SubResource("GDScript_x2fux")
 metadata/_edit_group_ = true
 
 [node name="Pear" parent="." unique_id=1424011257 instance=ExtResource("15_x2fux")]
 position = Vector2(1621, 930)
-script = ExtResource("24_1aans")
+script = SubResource("GDScript_s7g0b")
 metadata/_edit_group_ = true
 
 [node name="Strawberry" parent="." unique_id=303665229 instance=ExtResource("16_s7g0b")]
 position = Vector2(1055, 1310)
-script = ExtResource("26_q0ron")
+script = SubResource("GDScript_mmfjm")
 metadata/_edit_group_ = true
 
 [node name="Watermelon" parent="." unique_id=747599357 instance=ExtResource("17_mmfjm")]
 position = Vector2(1603, 1163)
-script = ExtResource("28_tdlki")
+script = SubResource("GDScript_k8ld0")
 metadata/_edit_group_ = true
 
 [connection signal="body_entered" from="Door_1" to="Door_1" method="_on_body_entered"]
