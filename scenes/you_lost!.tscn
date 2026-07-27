@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cv1ejtgye8h3u"]
+
+[ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="1_8ci7a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve8cl"]
+bg_color = Color(0.6666667, 0.3647059, 0.79607844, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4i17v"]
+bg_color = Color(0.09019608, 0.22745098, 0.6392157, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.021102747, 0.08725103, 0.29660848, 1)
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a18wa"]
+bg_color = Color(0.041465864, 0.13356087, 0.4111476, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.021102747, 0.08725103, 0.29660848, 1)
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5cyfc"]
+bg_color = Color(0.0588495, 0.16742244, 0.4945047, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.021102747, 0.08725103, 0.29660848, 1)
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64wma"]
+bg_color = Color(0.04765348, 0.14563552, 0.44093785, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.021102747, 0.08725103, 0.29660848, 1)
+shadow_size = 7
+
+[node name="you_lost!" type="Control" unique_id=1669199677]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=2044755073]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ve8cl")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=37083246]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16700001
+anchor_top = 0.46100003
+anchor_right = 0.83300006
+anchor_bottom = 0.54300004
+offset_left = -0.38401794
+offset_top = -0.22802734
+offset_right = 0.38391113
+offset_bottom = -2.3640137
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=30706345]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2098694046]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_8ci7a")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_4i17v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a18wa")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5cyfc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_64wma")
+text = "HOME"
+
+[node name="Label" type="Label" parent="." unique_id=903647626]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("1_8ci7a")
+theme_override_font_sizes/font_size = 70
+text = "You lost :("
+horizontal_alignment = 1
+vertical_alignment = 1
