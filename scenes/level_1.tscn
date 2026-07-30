@@ -3177,57 +3177,37 @@ script = SubResource("GDScript_2cbcq")
 [node name="Cherry" parent="." unique_id=1096442268 instance=ExtResource("9_2cbcq")]
 position = Vector2(281, 1033)
 script = SubResource("GDScript_isj1j")
-metadata/_edit_group_ = true
 
 [node name="Grapes" parent="." unique_id=597732201 instance=ExtResource("10_isj1j")]
 position = Vector2(772, 951)
 script = SubResource("GDScript_so66j")
-metadata/_edit_group_ = true
 
 [node name="Kiwi fruit" parent="." unique_id=858092761 instance=ExtResource("11_so66j")]
 position = Vector2(-200, 941)
 script = SubResource("GDScript_tr1x6")
-metadata/_edit_group_ = true
 
 [node name="Lemon" parent="." unique_id=720153073 instance=ExtResource("12_tr1x6")]
 position = Vector2(1645, 1518)
 script = SubResource("GDScript_d5akn")
-metadata/_edit_group_ = true
 
 [node name="Orange" parent="." unique_id=1523760524 instance=ExtResource("13_d5akn")]
 position = Vector2(2419, 1220)
 script = SubResource("GDScript_wbtxt")
-metadata/_edit_group_ = true
 
 [node name="Peach" parent="." unique_id=937533047 instance=ExtResource("14_wbtxt")]
 position = Vector2(2065, 1230)
 script = SubResource("GDScript_x2fux")
-metadata/_edit_group_ = true
 
 [node name="Pear" parent="." unique_id=1424011257 instance=ExtResource("15_x2fux")]
 position = Vector2(1621, 930)
 script = SubResource("GDScript_s7g0b")
-metadata/_edit_group_ = true
 
 [node name="Strawberry" parent="." unique_id=303665229 instance=ExtResource("16_s7g0b")]
 position = Vector2(1055, 1310)
 script = SubResource("GDScript_mmfjm")
-metadata/_edit_group_ = true
 
 [node name="Watermelon" parent="." unique_id=747599357 instance=ExtResource("17_mmfjm")]
 position = Vector2(1603, 1163)
 script = SubResource("GDScript_k8ld0")
-metadata/_edit_group_ = true
 
 [connection signal="body_entered" from="Door_1" to="Door_1" method="_on_body_entered"]
-[connection signal="body_entered" from="Banana" to="Banana" method="_on_body_entered"]
-[connection signal="body_entered" from="Blueberry" to="Blueberry" method="_on_body_entered"]
-[connection signal="body_entered" from="Cherry" to="Cherry" method="_on_body_entered"]
-[connection signal="body_entered" from="Grapes" to="Grapes" method="_on_body_entered"]
-[connection signal="body_entered" from="Kiwi fruit" to="Kiwi fruit" method="_on_body_entered"]
-[connection signal="body_entered" from="Lemon" to="Lemon" method="_on_body_entered"]
-[connection signal="body_entered" from="Orange" to="Orange" method="_on_body_entered"]
-[connection signal="body_entered" from="Peach" to="Peach" method="_on_body_entered"]
-[connection signal="body_entered" from="Pear" to="Pear" method="_on_body_entered"]
-[connection signal="body_entered" from="Strawberry" to="Strawberry" method="_on_body_entered"]
-[connection signal="body_entered" from="Watermelon" to="Watermelon" method="_on_body_entered"]
