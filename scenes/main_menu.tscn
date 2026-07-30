@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="2_ekxnf"]
 [ext_resource type="AudioStream" uid="uid://byiiocm0t2ylq" path="res://Sound/viacheslavstarostin-game-gaming-video-game-music-471936.mp3" id="3_bqqt6"]
 [ext_resource type="Script" uid="uid://c7wj1upir7xei" path="res://scripts/audio_control.gd" id="4_wu84c"]
+[ext_resource type="Script" uid="uid://dmrjhe6211b07" path="res://scripts/fullscreen_control.gd" id="5_8ln24"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
 bg_color = Color(0.6661177, 0.36519846, 0.7962743, 1)
@@ -370,7 +371,6 @@ autoplay = true
 bus = &"Music"
 
 [node name="Options" type="Panel" parent="." unique_id=512245717]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -429,8 +429,29 @@ offset_bottom = 136.0
 theme_override_styles/slider = SubResource("StyleBoxLine_bqqt6")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_wu84c")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_8ln24")
-value = 50.0
+max_value = 1.0
+step = 0.05
+value = 1.0
 script = ExtResource("4_wu84c")
+audio_bus_name = "Music"
+
+[node name="FullscreenControl" type="CheckButton" parent="Options" unique_id=1464379302]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 144.0
+offset_right = 736.0
+offset_bottom = 203.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+text = "Fullscreen"
+script = ExtResource("5_8ln24")
 
 [node name="Instructions" type="Panel" parent="." unique_id=600612556]
 visible = false
@@ -637,6 +658,7 @@ text = "LEVEL TWO"
 [connection signal="pressed" from="MarginContainer/Main Buttons/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Options/Exit Options" to="." method="_on_exit_options_pressed"]
 [connection signal="value_changed" from="Options/Audio Control" to="Options/Audio Control" method="_on_value_changed"]
+[connection signal="toggled" from="Options/FullscreenControl" to="Options/FullscreenControl" method="_on_toggled"]
 [connection signal="pressed" from="Instructions/Exit instructions" to="." method="_on_exit_instructions_pressed"]
 [connection signal="pressed" from="Credits/Exit credits" to="." method="_on_exit_credits_pressed"]
 [connection signal="pressed" from="Levels/Exit level select" to="." method="_on_exit_level_select_pressed"]
