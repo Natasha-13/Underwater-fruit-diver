@@ -4,14 +4,16 @@
 [ext_resource type="Script" uid="uid://cyuwmyi8j0anb" path="res://scripts/kiwi_fruit.gd" id="1_yfc5y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yfc5y"]
-height = 23.781363
+radius = 12.031487
+height = 28.42534
 
 [node name="Kiwi fruit" type="Area2D" unique_id=858092761]
 script = ExtResource("1_yfc5y")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=424859566]
-position = Vector2(4, 1)
+position = Vector2(4, 1.0000001)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_hyxgm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=894477953]

@@ -420,27 +420,23 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_5pajh")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j7ex8")
 text = "BACK"
 
-[node name="Audio Control" type="HSlider" parent="Options" unique_id=2141116355]
-layout_mode = 0
-offset_left = 96.0
-offset_top = 80.0
-offset_right = 736.0
-offset_bottom = 136.0
-theme_override_styles/slider = SubResource("StyleBoxLine_bqqt6")
-theme_override_styles/grabber_area = SubResource("StyleBoxLine_wu84c")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_8ln24")
-max_value = 1.0
-step = 0.05
-value = 1.0
-script = ExtResource("4_wu84c")
-audio_bus_name = "Music"
+[node name="VBoxContainer" type="VBoxContainer" parent="Options" unique_id=191249233]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -124.0
+offset_right = 256.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 21
 
-[node name="FullscreenControl" type="CheckButton" parent="Options" unique_id=1464379302]
-layout_mode = 0
-offset_left = 96.0
-offset_top = 144.0
-offset_right = 736.0
-offset_bottom = 203.0
+[node name="FullscreenControl" type="CheckButton" parent="Options/VBoxContainer" unique_id=1464379302]
+layout_mode = 2
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
@@ -453,8 +449,33 @@ theme_override_font_sizes/font_size = 40
 text = "Fullscreen"
 script = ExtResource("5_8ln24")
 
+[node name="HBoxContainer" type="HBoxContainer" parent="Options/VBoxContainer" unique_id=821428305]
+layout_mode = 2
+
+[node name="Audio Control" type="HSlider" parent="Options/VBoxContainer/HBoxContainer" unique_id=2141116355]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/slider = SubResource("StyleBoxLine_bqqt6")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_wu84c")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_8ln24")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("4_wu84c")
+audio_bus_name = "Music"
+
+[node name="Label2" type="Label" parent="Options/VBoxContainer/HBoxContainer" unique_id=504122237]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+text = "Music volume"
+
 [node name="Instructions" type="Panel" parent="." unique_id=600612556]
-visible = false
 layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
@@ -518,7 +539,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Credits" type="Panel" parent="." unique_id=992105531]
-visible = false
 layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
@@ -569,7 +589,6 @@ text = "These are people of things that helped me make this game"
 horizontal_alignment = 1
 
 [node name="Levels" type="Panel" parent="." unique_id=113995693]
-visible = false
 layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
@@ -657,8 +676,8 @@ text = "LEVEL TWO"
 [connection signal="pressed" from="MarginContainer/Main Buttons/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="MarginContainer/Main Buttons/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Options/Exit Options" to="." method="_on_exit_options_pressed"]
-[connection signal="value_changed" from="Options/Audio Control" to="Options/Audio Control" method="_on_value_changed"]
-[connection signal="toggled" from="Options/FullscreenControl" to="Options/FullscreenControl" method="_on_toggled"]
+[connection signal="toggled" from="Options/VBoxContainer/FullscreenControl" to="Options/VBoxContainer/FullscreenControl" method="_on_toggled"]
+[connection signal="value_changed" from="Options/VBoxContainer/HBoxContainer/Audio Control" to="Options/VBoxContainer/HBoxContainer/Audio Control" method="_on_value_changed"]
 [connection signal="pressed" from="Instructions/Exit instructions" to="." method="_on_exit_instructions_pressed"]
 [connection signal="pressed" from="Credits/Exit credits" to="." method="_on_exit_credits_pressed"]
 [connection signal="pressed" from="Levels/Exit level select" to="." method="_on_exit_level_select_pressed"]

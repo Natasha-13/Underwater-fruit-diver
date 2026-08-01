@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://du4w3hh0ej4e" path="res://Assests/Door.png" id="1_pkarf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ad8e4"]
-size = Vector2(24, 56)
+size = Vector2(29, 71)
 
 [node name="Door_2" type="Area2D" unique_id=1812068830]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1543735793]
 position = Vector2(0.5000024, -4.500002)
-scale = Vector2(1.53125, 2.46875)
+scale = Vector2(2, 3.225)
 texture = ExtResource("1_pkarf")
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366441811]
+position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_ad8e4")

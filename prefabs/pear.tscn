@@ -4,16 +4,19 @@
 [ext_resource type="Script" uid="uid://wdgknkbf0h20" path="res://scripts/pear.gd" id="1_twln5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_twln5"]
+radius = 11.0
+height = 32.0
 
 [node name="Pear" type="Area2D" unique_id=1424011257]
 script = ExtResource("1_twln5")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=756563055]
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_08gmc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1855935003]
-position = Vector2(0, -2)
+position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_twln5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

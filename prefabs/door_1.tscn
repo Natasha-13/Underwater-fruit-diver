@@ -4,16 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://du4w3hh0ej4e" path="res://Assests/Door.png" id="2_yidcr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qfj2i"]
-size = Vector2(24, 56)
+size = Vector2(31, 77)
 
 [node name="Door_1" type="Area2D" unique_id=1610237101]
 script = ExtResource("1_qfj2i")
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=696279845]
 position = Vector2(0.50000024, -5.000001)
-scale = Vector2(1.4062499, 2.4375)
+scale = Vector2(2, 3.469)
 texture = ExtResource("2_yidcr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=780455222]
+position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_qfj2i")

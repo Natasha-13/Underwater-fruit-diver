@@ -5,17 +5,19 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6xfom"]
 radius = 16.0
-height = 38.0
+height = 42.0
 
 [node name="Cherry" type="Area2D" unique_id=1096442268]
 script = ExtResource("1_6xfom")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=89337639]
+position = Vector2(-1, -1)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_k2eo3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2049741537]
-position = Vector2(1, 1)
+position = Vector2(0, 3)
 shape = SubResource("CapsuleShape2D_6xfom")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

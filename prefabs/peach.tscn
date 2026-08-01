@@ -4,7 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://c5blmuhgb6o5j" path="res://Assests/Peach.png" id="1_yld3y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sbudv"]
-radius = 12.024987
+radius = 14.36876
+height = 32.796867
 
 [node name="Peach" type="Area2D" unique_id=937533047]
 script = ExtResource("1_sbudv")
@@ -12,10 +13,11 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1838606858]
 position = Vector2(-1, 0)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_yld3y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1171442805]
-position = Vector2(-0.9999999, -1.9999999)
+position = Vector2(-1.7881393e-07, -1.0000002)
 rotation = -0.6741182
 shape = SubResource("CapsuleShape2D_sbudv")
 

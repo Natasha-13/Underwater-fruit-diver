@@ -4,14 +4,15 @@
 [ext_resource type="Script" uid="uid://dxxcht5tmmnbb" path="res://scripts/grapes.gd" id="1_873lc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_873lc"]
-radius = 11.0
+height = 26.0
 
 [node name="Grapes" type="Area2D" unique_id=597732201]
 script = ExtResource("1_873lc")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1177900881]
-position = Vector2(4, 0)
+position = Vector2(7, -4)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_4sbfk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=741783681]

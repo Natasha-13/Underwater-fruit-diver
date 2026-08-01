@@ -4,14 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://cjyjhfjh1arr" path="res://Assests/lemon.png" id="1_vhgug"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qq5kc"]
-height = 32.0
+radius = 11.0
+height = 34.0
 
 [node name="Lemon" type="Area2D" unique_id=720153073]
 script = ExtResource("1_qq5kc")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1742111451]
-position = Vector2(2, -2)
+position = Vector2(3, -3)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_vhgug")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1801267889]

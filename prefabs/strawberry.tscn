@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://b37amifm5injl" path="res://Assests/strawberry.png" id="1_pu0qw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3i40j"]
-radius = 9.0
-height = 22.0
+height = 24.0
 
 [node name="Strawberry" type="Area2D" unique_id=303665229]
 script = ExtResource("1_3i40j")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1202976006]
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_pu0qw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1982408786]

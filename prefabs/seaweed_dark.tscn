@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cyy2xrm636bxx"]
+
+[ext_resource type="Texture2D" uid="uid://clers10wh6dml" path="res://Assests/Seaweed - dark.png" id="1_lciwi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q2qy8"]
+radius = 19.0
+height = 68.0
+
+[node name="SeaweedDark" type="Area2D" unique_id=1738392308]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=118963261]
+position = Vector2(4, 0)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_lciwi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853474293]
+shape = SubResource("CapsuleShape2D_q2qy8")
