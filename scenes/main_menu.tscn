@@ -371,6 +371,7 @@ autoplay = true
 bus = &"Music"
 
 [node name="Options" type="Panel" parent="." unique_id=512245717]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -518,27 +519,25 @@ text = "Back"
 [node name="Label2" type="Label" parent="Instructions" unique_id=414004089]
 layout_mode = 1
 anchors_preset = -1
-offset_top = 34.0
+offset_top = 48.0
 offset_right = 832.0
-offset_bottom = 350.0
+offset_bottom = 306.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 20
-text = "How to play:
+theme_override_font_sizes/font_size = 21
+text = "How to move:
 Use left and right arrows to move side to side. Use space bar to jump
-Objective:
-Collect all the fruit to get your score as high as possible and once you have collected all the fruit head to the
-door to move on to the next level
-How to win:
-Collect all the  fruit and make it through the door to the next level in the quickest amount of time and once
-you have completed both the levels then you want to have the lowest time.
 What to do:
 At the start of the level you will be on the ground at the top of the game. From here you run along the
-platform until you find a tree and then there will be a hole that you fall down through it into the ocean"
+platform until you find a tree and then there will be a hole that you fall down through it into the ocean.
+Objective:
+Collect all the fruit to get your score as high as possible and once you have collected all the fruit head to
+the door to move on to the next level."
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Credits" type="Panel" parent="." unique_id=992105531]
+visible = false
 layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
@@ -589,6 +588,7 @@ text = "These are people of things that helped me make this game"
 horizontal_alignment = 1
 
 [node name="Levels" type="Panel" parent="." unique_id=113995693]
+visible = false
 layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
