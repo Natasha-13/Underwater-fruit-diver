@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dlqimhumb05v3"]
+
+[ext_resource type="Texture2D" uid="uid://yvx78semb4yc" path="res://Assests/Seaweed (different type).png" id="1_j23db"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_addm7"]
+radius = 27.073973
+
+[node name="Seaweed" type="Area2D" unique_id=502507940]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=483890919]
+position = Vector2(1, 2.9999995)
+scale = Vector2(2, 2)
+texture = ExtResource("1_j23db")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966274895]
+shape = SubResource("CircleShape2D_addm7")

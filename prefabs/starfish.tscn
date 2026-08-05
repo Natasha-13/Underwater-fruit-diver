@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c42opau03nph7"]
+
+[ext_resource type="Texture2D" uid="uid://qul4t2wm5am3" path="res://Assests/Starfish.png" id="1_pjfrk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kev18"]
+radius = 12.0
+
+[node name="Starfish" type="Area2D" unique_id=1502254016]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=173074440]
+position = Vector2(0, 2)
+texture = ExtResource("1_pjfrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1812087475]
+shape = SubResource("CircleShape2D_kev18")
