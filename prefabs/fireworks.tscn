@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bngjf5vgll6c1"]
+
+[ext_resource type="Texture2D" uid="uid://dxhw4lqqmqj3p" path="res://basic tilemap/Tiles/explosion/star1.png" id="1_db5ue"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_icvsy"]
+particle_flag_disable_z = true
+angle_min = -179.99998
+angle_max = 180.00002
+direction = Vector3(0, 0, 0)
+spread = 180.0
+initial_velocity_min = 10.0
+initial_velocity_max = 100.0
+angular_velocity_min = -90.000015
+angular_velocity_max = 89.999985
+gravity = Vector3(0, 0, 0)
+
+[node name="fireworks" type="Node2D" unique_id=1239414380]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1512884465]
+amount = 50
+texture = ExtResource("1_db5ue")
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_icvsy")
