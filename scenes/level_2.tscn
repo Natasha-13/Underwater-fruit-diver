@@ -19,6 +19,9 @@
 [ext_resource type="PackedScene" uid="uid://cva23he365csd" path="res://prefabs/strawberry.tscn" id="15_va6c3"]
 [ext_resource type="PackedScene" uid="uid://bkr2u6ugqnlpb" path="res://prefabs/watermelon.tscn" id="16_pc3at"]
 [ext_resource type="PackedScene" uid="uid://cc8lrcfp6k5f6" path="res://prefabs/canvas_layer.tscn" id="18_7qsfm"]
+[ext_resource type="PackedScene" uid="uid://dlqimhumb05v3" path="res://prefabs/seaweed.tscn" id="20_1sb0y"]
+[ext_resource type="PackedScene" uid="uid://cyy2xrm636bxx" path="res://prefabs/seaweed_dark.tscn" id="21_vhnap"]
+[ext_resource type="PackedScene" uid="uid://rdw0yl4rhpd0" path="res://prefabs/seaweed_light.tscn" id="22_vwfin"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jm1iu"]
 texture = ExtResource("2_jm1iu")
@@ -2830,5 +2833,27 @@ position = Vector2(2088, 1336)
 position = Vector2(2448, 1472)
 
 [node name="CanvasLayer" parent="." unique_id=1739900130 instance=ExtResource("18_7qsfm")]
+
+[node name="Seaweed" parent="." unique_id=502507940 instance=ExtResource("20_1sb0y")]
+position = Vector2(31, 1598)
+rotation = 0.7923795
+
+[node name="SeaweedDark" parent="." unique_id=1738392308 instance=ExtResource("21_vhnap")]
+position = Vector2(672, 1669)
+
+[node name="SeaweedLight" parent="." unique_id=1472158187 instance=ExtResource("22_vwfin")]
+position = Vector2(-160, 976)
+
+[node name="Seaweed2" parent="." unique_id=346009251 instance=ExtResource("20_1sb0y")]
+position = Vector2(-592, 1008)
+
+[node name="SeaweedDark2" parent="." unique_id=604687809 instance=ExtResource("21_vhnap")]
+position = Vector2(904, 976)
+
+[node name="SeaweedLight2" parent="." unique_id=318772602 instance=ExtResource("22_vwfin")]
+position = Vector2(1480, 1416)
+
+[node name="Seaweed3" parent="." unique_id=1339869373 instance=ExtResource("20_1sb0y")]
+position = Vector2(2191, 1596)
 
 [connection signal="body_entered" from="Door_2" to="Door_2" method="_on_body_entered"]

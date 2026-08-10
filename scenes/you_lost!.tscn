@@ -72,7 +72,7 @@ grow_vertical = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=30706345]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2098694046]
+[node name="Home button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2098694046]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
