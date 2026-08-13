@@ -2,6 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://dxhw4lqqmqj3p" path="res://basic tilemap/Tiles/explosion/star1.png" id="1_db5ue"]
 
+[sub_resource type="Gradient" id="Gradient_db5ue"]
+offsets = PackedFloat32Array(0, 0.64084506, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.10126579)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4d305"]
+gradient = SubResource("Gradient_db5ue")
+
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_icvsy"]
 particle_flag_disable_z = true
 angle_min = -179.99998
@@ -13,6 +20,7 @@ initial_velocity_max = 100.0
 angular_velocity_min = -90.000015
 angular_velocity_max = 89.999985
 gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_4d305")
 
 [node name="fireworks" type="Node2D" unique_id=1239414380]
 
