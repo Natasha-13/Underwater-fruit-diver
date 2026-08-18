@@ -2,19 +2,26 @@
 
 [ext_resource type="Texture2D" uid="uid://dlsdrgihteaj2" path="res://Assests/Chest.png" id="1_7lya3"]
 [ext_resource type="Script" uid="uid://bo2hu6os6e40l" path="res://scripts/chest.gd" id="1_c347f"]
+[ext_resource type="Texture2D" uid="uid://drjqx0yhii7k1" path="res://Assests/Open chest - whole.png" id="3_5xlvm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7lya3"]
 size = Vector2(52, 44)
 
 [node name="Chest" type="Area2D" unique_id=581830027]
 script = ExtResource("1_c347f")
-metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1342628603]
+[node name="Closed" type="Sprite2D" parent="." unique_id=1342628603]
 position = Vector2(3, 5)
 scale = Vector2(2, 2)
 texture = ExtResource("1_7lya3")
 
+[node name="Opened" type="Sprite2D" parent="." unique_id=1938744470]
+position = Vector2(2.9999976, 2.999998)
+scale = Vector2(1.9375, 2)
+texture = ExtResource("3_5xlvm")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1685760500]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_7lya3")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
