@@ -7,6 +7,7 @@
 size = Vector2(32, 70)
 
 [node name="Diver" type="CharacterBody2D" unique_id=543195763]
+z_index = 2
 safe_margin = 0.001
 script = ExtResource("1_tjub5")
 

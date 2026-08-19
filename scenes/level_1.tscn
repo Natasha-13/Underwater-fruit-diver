@@ -2989,14 +2989,15 @@ sources/2 = SubResource("TileSetAtlasSource_rus8k")
 [sub_resource type="GDScript" id="GDScript_x2xxo"]
 script/source = "extends Area2D
 
-
+func _ready():
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_2cbcq"]
@@ -3010,7 +3011,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_isj1j"]
@@ -3025,7 +3026,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_so66j"]
@@ -3039,7 +3040,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_tr1x6"]
@@ -3052,7 +3053,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_d5akn"]
@@ -3065,7 +3066,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_wbtxt"]
@@ -3078,7 +3079,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_x2fux"]
@@ -3091,7 +3092,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_s7g0b"]
@@ -3104,7 +3105,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_mmfjm"]
@@ -3116,7 +3117,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_k8ld0"]
@@ -3129,7 +3130,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
-		$CollisionShape2D.disabled = true
+		queue_free()
 "
 
 [node name="level 1" type="Node2D" unique_id=1243688593]
@@ -3247,5 +3248,11 @@ position = Vector2(-26, 935)
 
 [node name="Starfish2" parent="." unique_id=1581355376 instance=ExtResource("23_wbtxt")]
 position = Vector2(1820, 1167)
+
+[node name="Chest2" parent="." unique_id=1339055507 instance=ExtResource("19_2cbcq")]
+position = Vector2(576, -24)
+
+[node name="Apple2" parent="." unique_id=1999099939 instance=ExtResource("5_fcfvj")]
+position = Vector2(296, -24)
 
 [connection signal="body_entered" from="Door_1" to="Door_1" method="_on_body_entered"]

@@ -8,6 +8,7 @@
 size = Vector2(52, 44)
 
 [node name="Chest" type="Area2D" unique_id=581830027]
+z_index = 1
 script = ExtResource("1_c347f")
 
 [node name="Closed" type="Sprite2D" parent="." unique_id=1342628603]
@@ -25,3 +26,4 @@ position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_7lya3")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

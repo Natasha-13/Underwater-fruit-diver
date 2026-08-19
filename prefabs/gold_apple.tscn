@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c58oo12xsofv0"]
+
+[ext_resource type="Texture2D" uid="uid://c3drxa4uwklu1" path="res://Assests/Golden Apple.png" id="1_8qtl1"]
+[ext_resource type="Script" uid="uid://c1p4d38ig4p3i" path="res://scripts/gold_apple.gd" id="1_yx7km"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yx7km"]
+radius = 8.0
+
+[node name="Gold apple" type="Area2D" unique_id=1815106802]
+z_index = 1
+script = ExtResource("1_yx7km")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=84053988]
+position = Vector2(3, 2)
+texture = ExtResource("1_8qtl1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=223152314]
+shape = SubResource("CircleShape2D_yx7km")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
