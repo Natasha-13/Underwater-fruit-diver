@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bngjf5vgll6c1"]
 
+[ext_resource type="Script" uid="uid://clmkw0ih80kyr" path="res://scripts/fireworks.gd" id="1_4d305"]
 [ext_resource type="Texture2D" uid="uid://dxhw4lqqmqj3p" path="res://basic tilemap/Tiles/explosion/star1.png" id="1_db5ue"]
 
 [sub_resource type="Gradient" id="Gradient_db5ue"]
@@ -23,6 +24,7 @@ gravity = Vector3(0, 0, 0)
 color_ramp = SubResource("GradientTexture1D_4d305")
 
 [node name="fireworks" type="Node2D" unique_id=1239414380]
+script = ExtResource("1_4d305")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1512884465]
 amount = 50

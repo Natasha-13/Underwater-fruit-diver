@@ -8,6 +8,6 @@ func _ready():
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Diver":
 		print("Yum")
-		Global.score += 2
+		Global.score += 1.5
 		visible = false
 		queue_free()

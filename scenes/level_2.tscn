@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dlqimhumb05v3" path="res://prefabs/seaweed.tscn" id="20_1sb0y"]
 [ext_resource type="PackedScene" uid="uid://cyy2xrm636bxx" path="res://prefabs/seaweed_dark.tscn" id="21_vhnap"]
 [ext_resource type="PackedScene" uid="uid://rdw0yl4rhpd0" path="res://prefabs/seaweed_light.tscn" id="22_vwfin"]
+[ext_resource type="Texture2D" uid="uid://bjbv1m5q7s6f7" path="res://Assests/Arrow.png" id="23_vhnap"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jm1iu"]
 texture = ExtResource("2_jm1iu")
@@ -2855,5 +2856,40 @@ position = Vector2(1480, 1416)
 
 [node name="Seaweed3" parent="." unique_id=1339869373 instance=ExtResource("20_1sb0y")]
 position = Vector2(2191, 1596)
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=566465223]
+position = Vector2(128, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=246473035]
+position = Vector2(640, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=1631456684]
+position = Vector2(-384, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
+
+[node name="Arrow4" type="Sprite2D" parent="." unique_id=881731631]
+position = Vector2(1064, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
+
+[node name="Arrow5" type="Sprite2D" parent="." unique_id=1103018834]
+position = Vector2(1528, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
+
+[node name="Arrow6" type="Sprite2D" parent="." unique_id=360773903]
+position = Vector2(2072, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
+
+[node name="Arrow7" type="Sprite2D" parent="." unique_id=807845948]
+position = Vector2(2552, -200)
+scale = Vector2(2, 2)
+texture = ExtResource("23_vhnap")
 
 [connection signal="body_entered" from="Door_2" to="Door_2" method="_on_body_entered"]
