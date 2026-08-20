@@ -54,7 +54,7 @@ script = ExtResource("1_im1av")
 [node name="Background" type="Panel" parent="." unique_id=596564535]
 layout_mode = 0
 offset_right = 1152.0
-offset_bottom = 640.0
+offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6l602")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1264064928]
