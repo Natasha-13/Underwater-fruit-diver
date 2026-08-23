@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bw47eaynluv36"
+path="res://.godot/imported/Eating sound 9.mp3-43cd4fc1c824fe192b7a3b944aa22704.mp3str"
+
+[deps]
+
+source_file="res://Sound/Sound effects/Eating/Eating sound 9.mp3"
+dest_files=["res://.godot/imported/Eating sound 9.mp3-43cd4fc1c824fe192b7a3b944aa22704.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
