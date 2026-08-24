@@ -13,7 +13,7 @@ func _ready():
 	instructions.visible = false
 	credits.visible = false
 	levels.visible = false
-	SoundManager.play_sound(preload("res://Sound/Music/viacheslavstarostin-game-gaming-video-game-music-471936.mp3"))
+
 	
 func _on_play_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/level_1.tscn")

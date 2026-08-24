@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://s16nkicha01p"]
+
+[ext_resource type="AudioStream" uid="uid://byiiocm0t2ylq" path="res://Sound/Music/viacheslavstarostin-game-gaming-video-game-music-471936.mp3" id="1_cgxvm"]
+
+[node name="GlobalAudio" type="AudioStreamPlayer" unique_id=1657037699]
+stream = ExtResource("1_cgxvm")
+volume_db = -15.0
+autoplay = true
+bus = &"Music"

@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Eating sound 10.mp3-7c71d0757022224d1af7f0238
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

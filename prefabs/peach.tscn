@@ -21,4 +21,7 @@ position = Vector2(-1.7881393e-07, -1.0000002)
 rotation = -0.6741182
 shape = SubResource("CapsuleShape2D_sbudv")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=194885876]
+bus = &"SFX"
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

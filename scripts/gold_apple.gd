@@ -2,7 +2,6 @@ extends Area2D
 
 func _ready():
 	visible = true
-	$CollisionShape2D.disabled = false
 	
 
 func _on_body_entered(body: Node2D) -> void:
@@ -10,4 +9,5 @@ func _on_body_entered(body: Node2D) -> void:
 		print("Yum")
 		Global.score += 1.5
 		visible = false
+		SoundManager.play_sound(preload("res://Sound/Sound effects/Eating/Eating sound 14.mp3"))
 		queue_free()

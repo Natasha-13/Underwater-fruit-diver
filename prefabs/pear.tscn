@@ -19,4 +19,7 @@ texture = ExtResource("1_08gmc")
 position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_twln5")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=56404160]
+bus = &"SFX"
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

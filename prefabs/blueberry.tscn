@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://gu1v3lhs5m2a" path="res://scripts/blueberry.gd" id="1_dgjqw"]
 [ext_resource type="Texture2D" uid="uid://by4ig8iw1l7bu" path="res://Assests/Blueberry.png" id="1_fllgb"]
+[ext_resource type="AudioStream" uid="uid://chgr04rtmfb3y" path="res://Sound/Sound effects/Eating/Eating sound 3.mp3" id="3_k1j4f"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dgjqw"]
 radius = 12.201234
@@ -19,5 +20,9 @@ texture = ExtResource("1_fllgb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=478415966]
 rotation = -0.58119464
 shape = SubResource("CapsuleShape2D_dgjqw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1054381874]
+stream = ExtResource("3_k1j4f")
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

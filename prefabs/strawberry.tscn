@@ -17,4 +17,7 @@ texture = ExtResource("1_pu0qw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1982408786]
 shape = SubResource("CapsuleShape2D_3i40j")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1477407902]
+bus = &"SFX"
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
