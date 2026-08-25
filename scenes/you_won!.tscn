@@ -74,7 +74,7 @@ grow_vertical = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1298449351]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=85633653]
+[node name="Home" type="Button" parent="MarginContainer/VBoxContainer" unique_id=85633653]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -110,4 +110,4 @@ text = "YOU WON!!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Home" to="." method="_on_button_pressed"]

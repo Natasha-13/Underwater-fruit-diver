@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmn6d0lkndne8"
+path="res://.godot/imported/Seaweed damage sound 1.mp3-98008c24c3d53e771e620014b8762967.mp3str"
+
+[deps]
+
+source_file="res://Sound/Sound effects/Damage/Seaweed damage sound 1.mp3"
+dest_files=["res://.godot/imported/Seaweed damage sound 1.mp3-98008c24c3d53e771e620014b8762967.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -2998,139 +2998,157 @@ func _on_body_entered(body: Node2D) -> void:
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_2cbcq"]
 script/source = "extends Area2D
 
-
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_isj1j"]
 script/source = "extends Area2D
 
-
-
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_so66j"]
 script/source = "extends Area2D
 
-
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_tr1x6"]
 script/source = "extends Area2D
 
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_d5akn"]
 script/source = "extends Area2D
 
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_wbtxt"]
 script/source = "extends Area2D
 
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_x2fux"]
 script/source = "extends Area2D
 
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_s7g0b"]
 script/source = "extends Area2D
 
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_mmfjm"]
 script/source = "extends Area2D
 
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 
 [sub_resource type="GDScript" id="GDScript_k8ld0"]
 script/source = "extends Area2D
 
-
+func _ready() -> void:
+	visible = true
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == \"Diver\":
 		print(\"Yum!\")
 		Global.score += 1
 		visible = false
+		SoundManager.play_sound(preload(\"res://Sound/Sound effects/Eating/Eating sound 3.mp3\"))
 		queue_free()
 "
 

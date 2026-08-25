@@ -19,4 +19,6 @@ texture = ExtResource("1_lciwi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853474293]
 shape = SubResource("CapsuleShape2D_q2qy8")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1578401106]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
