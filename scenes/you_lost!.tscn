@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cv1ejtgye8h3u"]
 
+[ext_resource type="Script" uid="uid://bhny2n60xbpy" path="res://scripts/you_lost!.gd" id="1_4i17v"]
 [ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="1_8ci7a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve8cl"]
@@ -48,6 +49,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4i17v")
 
 [node name="Panel" type="Panel" parent="." unique_id=2044755073]
 layout_mode = 0
@@ -98,3 +100,5 @@ theme_override_font_sizes/font_size = 70
 text = "You lost :("
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Home button" to="." method="_on_home_button_pressed"]

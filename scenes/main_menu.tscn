@@ -470,7 +470,6 @@ theme_override_font_sizes/font_size = 40
 text = "Music volume"
 
 [node name="Instructions" type="Panel" parent="." unique_id=600612556]
-visible = false
 layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
