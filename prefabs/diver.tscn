@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://b55dtnmhc430i" path="res://scripts/camera_2d.gd" id="3_gevxa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tjub5"]
-size = Vector2(32, 70)
+size = Vector2(28, 58)
 
 [node name="Diver" type="CharacterBody2D" unique_id=543195763]
 z_index = 2
@@ -18,7 +18,7 @@ scale = Vector2(1, 1.072)
 texture = ExtResource("2_tjub5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1820275315]
-position = Vector2(1, 1)
+position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_tjub5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944599059]

@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://cyy2xrm636bxx" path="res://prefabs/seaweed_dark.tscn" id="21_vhnap"]
 [ext_resource type="PackedScene" uid="uid://rdw0yl4rhpd0" path="res://prefabs/seaweed_light.tscn" id="22_vwfin"]
 [ext_resource type="Texture2D" uid="uid://bjbv1m5q7s6f7" path="res://Assests/Arrow.png" id="23_vhnap"]
+[ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="24_vwfin"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jm1iu"]
 texture = ExtResource("2_jm1iu")
@@ -2891,5 +2892,15 @@ texture = ExtResource("23_vhnap")
 position = Vector2(2552, -200)
 scale = Vector2(2, 2)
 texture = ExtResource("23_vhnap")
+
+[node name="Label" type="Label" parent="." unique_id=793950496]
+offset_left = -232.0
+offset_top = -256.0
+offset_right = 35.0
+offset_bottom = -179.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("24_vwfin")
+theme_override_font_sizes/font_size = 60
+text = "LEVEL TWO"
 
 [connection signal="body_entered" from="Door_2" to="Door_2" method="_on_body_entered"]
