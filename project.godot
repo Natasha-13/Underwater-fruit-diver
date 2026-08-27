@@ -24,10 +24,30 @@ buses/default_bus_layout="uid://1j1hbi5muxo"
 Global="*uid://c4v6a70ufovxw"
 SoundManager="*uid://g25jllkssw8q"
 GlobalAudio="*uid://s16nkicha01p"
+TransitionScreen="*uid://nsquhaqwp4cd"
 
 [display]
 
 window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://Assests/": "red",
+"res://Fonts/": "yellow",
+"res://Sound/": "purple",
+"res://Sound/Music/": "pink",
+"res://Sound/Sound effects/Celebration/": "pink",
+"res://Sound/Sound effects/Disappointed/": "pink",
+"res://Sound/Sound effects/Fireworks/": "pink",
+"res://basic tilemap/": "orange",
+"res://basic tilemap/Backgrounds/": "yellow",
+"res://basic tilemap/Tilemap/": "green",
+"res://basic tilemap/Tiles/": "teal",
+"res://prefabs/": "green",
+"res://scenes/": "teal",
+"res://scripts/": "blue"
+}
 
 [input]
 

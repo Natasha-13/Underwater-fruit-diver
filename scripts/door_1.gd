@@ -6,10 +6,11 @@ func _on_body_entered(body: Node2D) -> void:
 		if Global.score >= 10:
 			print("You Won!")
 			# load a new level
-			get_tree().change_scene_to_file("res://scenes/level_2.tscn")
+			TransitionScreen.transition_to("res://scenes/level_2.tscn")
+
 			pass
 		if Global.score <= 5:
 			print("you lost")
-			get_tree().change_scene_to_file("res://scenes/you_lost!.tscn")
-			
+		TransitionScreen.transition_to("res://scenes/you_lost!.tscn")
+		
 	
