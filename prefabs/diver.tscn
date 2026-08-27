@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bvwlk6kb00dln" path="res://scripts/diver.gd" id="1_tjub5"]
 [ext_resource type="Texture2D" uid="uid://c60unhe8jqlqy" path="res://Assests/Diver.png" id="2_tjub5"]
+[ext_resource type="Script" uid="uid://b55dtnmhc430i" path="res://scripts/camera_2d.gd" id="3_gevxa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tjub5"]
 size = Vector2(32, 70)
@@ -22,3 +23,5 @@ shape = SubResource("RectangleShape2D_tjub5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944599059]
 position_smoothing_enabled = true
+script = ExtResource("3_gevxa")
+shake_fade = 5.0

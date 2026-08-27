@@ -8,3 +8,4 @@ func _on_body_entered(body: Node2D) -> void:
 		print("ouch!")
 		Global.score -= 1
 		SoundManager.play_sound(preload("res://Sound/Sound effects/Damage/Seaweed damage sound 1.mp3"), -20.0)
+		get_tree().call_group("camera", "apply_shake", 20.0)

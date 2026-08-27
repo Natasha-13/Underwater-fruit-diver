@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dv0owwrol5jox" path="res://Fonts/LoverSquad-4nr89.otf" id="2_ekxnf"]
 [ext_resource type="Script" uid="uid://c7wj1upir7xei" path="res://scripts/audio_control.gd" id="4_wu84c"]
 [ext_resource type="Script" uid="uid://dmrjhe6211b07" path="res://scripts/fullscreen_control.gd" id="5_8ln24"]
+[ext_resource type="Script" uid="uid://y6f65tj6tcf4" path="res://scripts/sfx_control.gd" id="5_rtw2f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
 bg_color = Color(0.6661177, 0.36519846, 0.7962743, 1)
@@ -125,44 +126,8 @@ corner_radius_bottom_left = 16
 shadow_color = Color(0.09019608, 0.10980392, 0.28235295, 1)
 shadow_size = 7
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flqon"]
-bg_color = Color(0.2925973, 0.479607, 0.94290805, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0.09019608, 0.10980392, 0.28235295, 1)
-shadow_size = 7
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcqid"]
-bg_color = Color(0.08538184, 0.21975562, 0.6183443, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ajci"]
-bg_color = Color(0.16522881, 0.34364825, 0.841889, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
-bg_color = Color(0.27207032, 0.4601509, 0.93521947, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0.11372549, 0.13725491, 0.34117648, 1)
-shadow_size = 5
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
-bg_color = Color(0.4387866, 0.6032701, 0.9757293, 1)
+bg_color = Color(0.2360515, 0.43776846, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -307,20 +272,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_5dd4i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgwnu")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ekxnf")
 text = "OPTIONS"
-
-[node name="Credits" type="Button" parent="MarginContainer/Main Buttons" unique_id=424911315]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_flqon")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_rcqid")
-theme_override_styles/hover = SubResource("StyleBoxFlat_1ajci")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_bqqt6")
-text = "CREDITS"
 
 [node name="Quit" type="Button" parent="MarginContainer/Main Buttons" unique_id=1189893167]
 layout_mode = 2
@@ -469,6 +420,29 @@ theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 40
 text = "Music volume"
 
+[node name="HBoxContainer2" type="HBoxContainer" parent="Options/VBoxContainer" unique_id=1050097955]
+layout_mode = 2
+
+[node name="SFX Control" type="HSlider" parent="Options/VBoxContainer/HBoxContainer2" unique_id=1357741770]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/slider = SubResource("StyleBoxLine_bqqt6")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_wu84c")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_8ln24")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("5_rtw2f")
+
+[node name="Label" type="Label" parent="Options/VBoxContainer/HBoxContainer2" unique_id=1453296116]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+text = "Sound effects"
+
 [node name="Instructions" type="Panel" parent="." unique_id=600612556]
 layout_mode = 0
 offset_left = 160.0
@@ -512,73 +486,24 @@ text = "Back"
 [node name="Label2" type="Label" parent="Instructions" unique_id=414004089]
 layout_mode = 1
 anchors_preset = -1
-offset_top = 48.0
+offset_top = 43.0
 offset_right = 832.0
-offset_bottom = 306.0
+offset_bottom = 350.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 21
 text = "How to move:
-Use left and right arrows to move side to side. Use space bar to jump
+Use left and right arrows to move side to side. Use space bar to jump. Use the left click on your mouse
+to open the chest.
 What to do:
 At the start of the level you will be on the ground at the top of the game. From here you run along the
 platform until you find a tree and then there will be a hole that you fall down through it into the ocean.
 Objective:
 Collect all the fruit to get your score as high as possible and once you have collected all the fruit head to
-the door to move on to the next level."
+the door to move on to the next level. Avoid touching the tall seaweed as it lowers  your score. Also avoid
+touching the short seaweed as it will slow you down, but it won't lower your score."
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Credits" type="Panel" parent="." unique_id=992105531]
-visible = false
-layout_mode = 0
-offset_left = 160.0
-offset_top = 168.0
-offset_right = 992.0
-offset_bottom = 600.0
-
-[node name="Label" type="Label" parent="Credits" unique_id=738722826]
-layout_mode = 0
-offset_right = 832.0
-offset_bottom = 56.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 40
-text = "Credits"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Exit credits" type="Button" parent="Credits" unique_id=289144116]
-layout_mode = 0
-offset_left = 96.0
-offset_top = 352.0
-offset_right = 736.0
-offset_bottom = 408.0
-theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
-theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_7b55j")
-theme_override_styles/hover = SubResource("StyleBoxFlat_5pajh")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j7ex8")
-text = " BACK"
-
-[node name="Label2" type="Label" parent="Credits" unique_id=561907095]
-layout_mode = 0
-offset_top = 56.0
-offset_right = 832.0
-offset_bottom = 336.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_ekxnf")
-theme_override_font_sizes/font_size = 20
-text = "These are people of things that helped me make this game"
-horizontal_alignment = 1
 
 [node name="Levels" type="Panel" parent="." unique_id=113995693]
 visible = false
@@ -666,13 +591,12 @@ text = "LEVEL TWO"
 [connection signal="pressed" from="MarginContainer/Main Buttons/Instructions" to="." method="_on_instructions_pressed"]
 [connection signal="pressed" from="MarginContainer/Main Buttons/Level select" to="." method="_on_level_select_pressed"]
 [connection signal="pressed" from="MarginContainer/Main Buttons/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="MarginContainer/Main Buttons/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="MarginContainer/Main Buttons/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Options/Exit Options" to="." method="_on_exit_options_pressed"]
 [connection signal="toggled" from="Options/VBoxContainer/FullscreenControl" to="Options/VBoxContainer/FullscreenControl" method="_on_toggled"]
 [connection signal="value_changed" from="Options/VBoxContainer/HBoxContainer/Audio Control" to="Options/VBoxContainer/HBoxContainer/Audio Control" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/VBoxContainer/HBoxContainer2/SFX Control" to="Options/VBoxContainer/HBoxContainer2/SFX Control" method="_on_value_changed"]
 [connection signal="pressed" from="Instructions/Exit instructions" to="." method="_on_exit_instructions_pressed"]
-[connection signal="pressed" from="Credits/Exit credits" to="." method="_on_exit_credits_pressed"]
 [connection signal="pressed" from="Levels/Exit level select" to="." method="_on_exit_level_select_pressed"]
 [connection signal="pressed" from="Levels/Level one" to="." method="_on_level_one_pressed"]
 [connection signal="pressed" from="Levels/Level two" to="." method="_on_level_two_pressed"]

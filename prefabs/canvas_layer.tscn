@@ -44,9 +44,15 @@ shadow_size = 5
 script = ExtResource("1_xtb4j")
 
 [node name="Score" type="Label" parent="." unique_id=1383443442]
-offset_right = 61.0
-offset_bottom = 23.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -120.0
+offset_bottom = 51.0
+grow_horizontal = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_xtb4j")
+theme_override_font_sizes/font_size = 40
 text = "Score = "
 script = ExtResource("1_vxx0o")
 
@@ -131,9 +137,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Pause" type="Button" parent="." unique_id=1622799829]
-offset_top = 32.0
 offset_right = 128.0
-offset_bottom = 96.0
+offset_bottom = 64.0
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
