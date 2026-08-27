@@ -7,10 +7,8 @@ func _on_body_entered(body: Node2D) -> void:
 			print("You Won!")
 			# load a new level
 			TransitionScreen.transition_to("res://scenes/level_2.tscn")
-
-			pass
 		if Global.score <= 5:
 			print("you lost")
-		TransitionScreen.transition_to("res://scenes/you_lost!.tscn")
+			TransitionScreen.transition_to("res://scenes/you_lost!.tscn")
 		
 	

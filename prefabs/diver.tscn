@@ -18,7 +18,7 @@ scale = Vector2(1, 1.072)
 texture = ExtResource("2_tjub5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1820275315]
-position = Vector2(0, -3)
+position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_tjub5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944599059]
